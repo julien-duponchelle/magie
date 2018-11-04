@@ -1,0 +1,89 @@
+{
+  "interactionModel": {
+      "languageModel": {
+          "invocationName": "magie",
+          "intents": [
+              {
+                  "name": "AMAZON.CancelIntent",
+                  "samples": []
+              },
+              {
+                  "name": "AMAZON.HelpIntent",
+                  "samples": []
+              },
+              {
+                  "name": "AMAZON.StopIntent",
+                  "samples": []
+              },
+              {
+                  "name": "AMAZON.NavigateHomeIntent",
+                  "samples": []
+              },
+              {
+                  "name": "AMAZON.NoIntent",
+                  "samples": [
+                      "non"
+                  ]
+              },
+              {
+                  "name": "AMAZON.YesIntent",
+                  "samples": [
+                      "oui"
+                  ]
+              },
+              {
+                  "name": "AMAZON.PreviousIntent",
+                  "samples": []
+              },
+              {
+                  "name": "AMAZON.StartOverIntent",
+                  "samples": []
+              },
+              {
+                  "name": "CATCH_ALL",
+                  "slots": [
+                      {
+                          "name": "text",
+                          "type": "Anything"
+                      }
+                  ],
+                  "samples": [
+                      "{text}"
+                  ]
+              }
+          ],
+          "types": [
+              {
+                  "name": "Anything",
+                  "values": [
+                      {
+                          "name": {
+                              "value": "hey hey hey hey hey"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "hey hey hey hey"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "hey hey hey"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "hey hey"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "hey"
+                          }
+                      }
+                  ]
+              }
+          ]
+      }
+  }
+}

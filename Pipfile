@@ -1,0 +1,13 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+"669474f" = {file = "https://github.com/noplay/flask-ask/archive/master.zip"}
+zappa = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.6"

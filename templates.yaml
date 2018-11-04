@@ -1,0 +1,20 @@
+welcome: |
+  Et c'est partie pour la magie! Dite la formule magique pour que je devine une lettre
+
+welcome_re: |
+  Dite la formule magique pour que je devine une lettre
+
+welcome_card: |
+  C'est magique!
+
+stop_bye: |
+  Au revoir!
+
+cancel_bye: |
+  OK, à bientôt!
+
+help_text: |
+  Dite la formule magique pour que je devine une lettre
+
+response: |
+  C'est la lettre {{letter}}!
