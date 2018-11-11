@@ -61,8 +61,15 @@ def handle_launch():
 
 @ask.intent('CATCH_ALL')
 def catch_all(text):
-    response = render_template('response', letter=text.split(' ')[-1:][0][-1:])
-    return statement(response)
+    if text:
+        response = render_template('response', letter=text.split(' ')[-1:][0][-1:])
+        return statement(response)
+    else:
+        welcome_text = render_template('welcome')
+        welcome_re_text = render_template('welcome_re')
+        welcome_card_text = render_template('welcome_card')
+        return question(welcome_text).reprompt(welcome_re_text).standard_card(title="Magie",
+                                                                          text=welcome_card_text)
 
 
 # Built-in intents
@@ -101,37 +108,6 @@ def handle_help():
 
     help_text = render_template('help_text')
     return question(help_text)
-
-
-@ask.intent('AMAZON.NoIntent')
-def handle_no():
-    """
-    (?) Handles the 'no' built-in intention.
-    """
-    pass
-
-@ask.intent('AMAZON.YesIntent')
-def handle_yes():
-    """
-    (?) Handles the 'yes'  built-in intention.
-    """
-    pass
-
-
-@ask.intent('AMAZON.PreviousIntent')
-def handle_back():
-    """
-    (?) Handles the 'go back!'  built-in intention.
-    """
-    pass
-
-@ask.intent('AMAZON.StartOverIntent')
-def start_over():
-    """
-    (QUESTION) Handles the 'start over!'  built-in intention.
-    """
-    pass
-
 
 # Ending session
 #

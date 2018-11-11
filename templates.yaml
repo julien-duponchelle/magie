@@ -14,7 +14,9 @@ cancel_bye: |
   OK, à bientôt!
 
 help_text: |
-  Dite la formule magique pour que je devine une lettre
+  Demandez à un amis de vous donner une lettre que vous allez faire
+  deviner à Alexa. Dite n'importe quoi à Alexa la dernière lettre du
+  dernier mot devant être la lettre que devinera Alexa.
 
 response: |
   C'est la lettre {{letter}}!
